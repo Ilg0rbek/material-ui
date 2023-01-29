@@ -42,7 +42,6 @@ async function run(argv) {
     '**/*.spec.tsx',
     '**/*.d.ts',
   ];
-
   const topLevelNonIndexFiles = glob
     .sync(`*{${extensions.join(',')}}`, { cwd: srcDir, ignore })
     .filter((file) => {
